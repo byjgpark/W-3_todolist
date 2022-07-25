@@ -1,0 +1,11 @@
+.add-form {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+
+    background-color: #eee;
+    border-radius: 12px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px;
+}
