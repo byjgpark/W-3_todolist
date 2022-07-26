@@ -1,5 +1,3 @@
-import { Component, useState } from "react";
-// import "./App.css";
 import Layout from "../components/layout/Layout.jsx"
 
 function TodoList() {
@@ -9,4 +7,4 @@ function TodoList() {
   );
 }
 
-export default Layout;
+export default TodoList;
