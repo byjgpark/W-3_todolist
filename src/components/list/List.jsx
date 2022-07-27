@@ -1,6 +1,6 @@
 import React from 'react'; 
-import './style.css';
 import Todo from '../todo/Todo.jsx'
+import './style.css';
 
 function List(props){
   return(

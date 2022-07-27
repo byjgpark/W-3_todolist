@@ -1,7 +1,6 @@
 import React from 'react'; 
 import './style.css';
 
-
 function Todo(props) {
 
   // function that change to Done HTML
@@ -45,11 +44,12 @@ function Todo(props) {
   return (
     <div className="list-container"> 
         <h2 className="list-title">Working... 🔥</h2>
+        <div className="list-wrapper">
   {/* if todo.isDone is false, it moves to the Working Section*/}
   {props.listProps.todos.map((todo) => {
       if (todo.isDone === false) {
         return (
-          <div className="list-wrapper">
+         
             <div className="todo-container">
               <div className="todo" key={todo.id}>
                 <h2>{todo.title}</h2>
@@ -60,12 +60,14 @@ function Todo(props) {
                 <button className="todo-complete-button button" onClick={() =>{compFun(todo.id)}}>완료</button>
               </div>
             </div>
-          </div>
+        
         )
       }
     })}
+    </div>
 
   <h2 className="list-title">Done...!🎉</h2>
+  <div className="list-wrapper">
   {/* if todo.isDone is true, it moves to the Done Section*/}
   {props.listProps.todos.map((todo) => {
       if (todo.isDone === true) {
@@ -86,6 +88,7 @@ function Todo(props) {
       }
     })
   }
+  </div>
 </div>
   )
 }

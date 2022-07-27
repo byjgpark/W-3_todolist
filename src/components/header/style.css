@@ -1,6 +1,7 @@
 .container {
     align-items: center;
-    border: 1px solid #ddd;
+    border: 4px solid green;
+    border-bottom: none;
     display: flex;
     height: 50px;
     justify-content: space-between;

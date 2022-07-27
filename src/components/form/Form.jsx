@@ -11,28 +11,34 @@ function Form(props) {
   
   return (
     <div className="add-form">
-    <input
+      <div className="input-group">
+    <label className="form-label">제목</label>
+    <input className="add-input input-body" value={title}
       onChange={(e) => {
         // Getting User title input
         setTitle(e.target.value);
       }}
     />
-    <input
+    <label className="form-label">내용</label>
+    <input className="add-input" value={body}
       onChange={(e) => {
         // Getting User Content input
         setContent(e.target.value);
       }}
     />
-    <button
+    </div>
+    <button className="add-button"
       onClick={() => {
         props.setTodos([
           // Appending user's post to todos hook
           ...props.todos,
           { id: props.todos.length + 1, title: title, body: body, isDone: false },
-        ]);
+        ])
+      setTitle('')
+      setContent('')
       }}
     >
-      저장
+      추가하기
     </button>
   </div>
   );
