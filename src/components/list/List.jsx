@@ -2,9 +2,9 @@ import React from 'react';
 import Todo from '../todo/Todo.jsx'
 import './style.css';
 
-function List(props){
+function List(){
   return(
-    <Todo listProps={props}/>
+    <Todo/>
       )
 }
 
