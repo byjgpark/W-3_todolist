@@ -17,10 +17,12 @@ form {
     margin-top: 0em;
 }
 
+
 .input-group {
     align-items: center;
     display: flex;
     gap: 20px;
+    
 }
 
 label {
